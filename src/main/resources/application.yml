@@ -1,0 +1,14 @@
+spring:
+  ssl:
+    bundle:
+      pem:
+        example:
+          reload-on-update: true
+          keystore:
+            certificate: "certs/example.crt"
+            private-key: "certs/example.key"
+
+server:
+  ssl:
+    bundle: "example"
+  port: 8443
