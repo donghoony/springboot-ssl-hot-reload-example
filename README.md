@@ -1,6 +1,7 @@
 see [reference](https://spring.io/blog/2023/11/07/ssl-hot-reload-in-spring-boot-3-2-0)
 
 ```
+mkdir certs & cd certs
 openssl req -x509 -subj "/CN=example-cert-1" \
 -keyout example.key -out example.crt -days 365 -sha512 -nodes -newkey rsa
 ```
