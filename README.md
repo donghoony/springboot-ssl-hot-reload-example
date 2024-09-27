@@ -15,13 +15,13 @@ openssl req -x509 -subj "/CN=example-cert-2" \
 
 Application log below:
 ```
-2024-08-14T16:51:35.018+09:00  INFO 45591 --- [-bundle-watcher] o.a.t.util.net.NioEndpoint.certificate   :
+2024-08-14T16:51:35.018+09:00  INFO 45591 --- [-bundle-watcher] o.a.t.util.net.NioEndpoint.certificate :
 Connector [https-jsse-nio-8443], TLS virtual host [_default_],
 certificate type [UNDEFINED] configured from keystore [/Users/donghoony/.keystore]
 using alias [tomcat] with trust store [null]
 ```
 
-to check the ssl has changed:
+to check the certificate has changed, use command below:
 ```
 curl -v --insecure https://localhost:8443/ping
 ```
